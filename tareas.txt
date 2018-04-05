@@ -1,0 +1,7 @@
+-hacer un footer como la gente
+-Hacer un nav bar en el header con los links "ver todos " , "agregar"
+-Que el listado de todos se haga con angular material
+-Agregarle validación al formulario de agregar todos
+
+
+-Hacer la api y no consultar a la de ejemplo

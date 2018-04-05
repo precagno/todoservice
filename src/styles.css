@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+
+/*@import "assets/css/bootstrap.min.css";*/
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+
+
+body {
+    margin: 0;
+}
+
+h1{
+    font-size: 4.5em;
+}
+
+h3{
+    font-size: 1.5em;
+}

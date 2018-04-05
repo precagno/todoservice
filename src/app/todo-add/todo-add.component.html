@@ -1,0 +1,50 @@
+<div class="row">
+    
+
+    <div class="col-md-12">
+        <h2>Todo add</h2>
+        <div class="alert alert-warning alert-dismissible fade show" role="alert" *ngIf='postSuccess'>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close" (click) = 'hideSuccessBanner()'>
+                <span aria-hidden="true">&times;</span>
+              </button>
+            <strong>Data agregada correctamente</strong>
+        </div>
+    </div>
+
+    <div class="col-md-12 order-md-1">
+      <form class="needs-validation" novalidate="" (submit) = 'submitForm($event)'>
+        <div class="row">
+          <div class="col-md-12 mb-3">
+            <label for="title">Title</label>
+            <input type="text" name="todo_title" class="form-control" [(ngModel)]='todo_title'>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="userid">User ID</label>
+            <select class="custom-select d-block w-100" id="user_id" required="" [(ngModel)]='user_id' name="user_id">
+              <option value="">Choose an ID</option>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+            </select>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="completed">Completed</label>
+            <select class="custom-select d-block w-100" id="state" required=""  [(ngModel)] = 'completed' name="completed">
+              <option value="true">True</option>
+              <option value="false">false</option>
+            </select>
+            <div class="invalid-feedback">
+              Please provide a valid state.
+            </div>
+          </div>
+        </div>
+            
+        <hr class="mb-4">
+        <button class="btn btn-primary btn-lg btn-block" type="submit">Add Todo</button>
+      </form>
+    </div>
+  </div>
